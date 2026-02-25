@@ -1,1 +1,144 @@
-contact.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Info | Silver Creek Lakes Club</title>
+  <meta name="description" content="Contact Silver Creek Lakes Club for guided days, guest access info, and logistics for private fly fishing in Saguache County, Colorado." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Silver Creek Lakes Club Home">
+        <div class="brand-text">
+          <span class="brand-name">Silver Creek Lakes Club</span>
+          <span class="brand-tag">Private Fly Fishing • Saguache County, Colorado</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="guides.html">Guides</a>
+        <a class="nav-link active" href="contact.html">Contact & Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact & Info</h1>
+        <p class="lead">
+          Questions about guest access, guided days, or logistics? Reach out and we’ll get you squared away.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Request a day</h2>
+          <p class="muted">
+            Easiest option (free): use email. If you want a form, scroll down—there’s a plug-and-play Formspree version.
+          </p>
+
+          <!-- SIMPLE EMAIL CTA -->
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p>
+              <a class="btn primary" href="mailto:YOUR_EMAIL_HERE?subject=Silver%20Creek%20Lakes%20Guiding%20Inquiry">
+                Email to Inquire
+              </a>
+            </p>
+            <p class="muted small">
+              Replace <code>YOUR_EMAIL_HERE</code> in the link with your email address.
+            </p>
+          </div>
+
+          <h2>Property notes</h2>
+          <ul class="bullets">
+            <li><strong>Location:</strong> Saguache County, Colorado (Arkansas River Valley headwaters)</li>
+            <li><strong>Water:</strong> 3 lakes • 10 ponds • shallow connecting stream</li>
+            <li><strong>Membership:</strong> only through owning land or a home</li>
+            <li><strong>Guests:</strong> allowed with members</li>
+            <li><strong>Fishing style:</strong> independent or guided excursions</li>
+          </ul>
+
+          <h2>Suggested info to include in your message</h2>
+          <ul class="bullets">
+            <li>Dates you’re looking at</li>
+            <li>Experience level (beginner / intermediate / advanced)</li>
+            <li>Preferred style (stillwater / stream / streamer / indicator)</li>
+            <li>Number of anglers</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Optional: add a real contact form (Formspree)</h2>
+          <p class="muted">
+            If you want submissions to come to your inbox without exposing your email address, Formspree is the easiest.
+            Create a form at Formspree, then paste your endpoint into <code>action=""</code>.
+          </p>
+
+          <!-- FORM (inactive until you add your Formspree endpoint) -->
+          <form class="form" method="POST" action="">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label>
+              Dates / Timing
+              <input type="text" name="dates" placeholder="e.g., May 10–12 or flexible">
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="6" placeholder="Tell us what you’re looking for..." required></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send</button>
+
+            <p class="muted small">
+              To activate: set <code>action="https://formspree.io/f/xxxxxxx"</code> after you create your Formspree form.
+            </p>
+          </form>
+
+          <div class="contact-card subtle">
+            <h3>Simple policies section (optional)</h3>
+            <ul class="bullets small">
+              <li>Barbless hooks recommended</li>
+              <li>Catch-and-release (if applicable)</li>
+              <li>Weather considerations</li>
+              <li>What to bring (waders, layers, etc.)</li>
+            </ul>
+            <p class="muted small">You can tighten these up later once your club rules are finalized.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-title">Silver Creek Lakes Club</div>
+          <div class="muted">Private fly fishing • Saguache County, Colorado</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="guides.html">Guides</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
