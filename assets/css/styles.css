@@ -339,9 +339,10 @@ hr.rule{
 .photo img{
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 10;   /* wider, less aggressive crop */
+  aspect-ratio: 3/2;   /* wider, less aggressive crop */
   object-fit: cover;
   object-position: center; /* adjust if needed */
+   object-position: center 35%;
 }
 .photo figcaption{
   padding: .75rem .95rem;
