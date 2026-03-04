@@ -337,9 +337,8 @@ hr.rule{
   box-shadow: 0 10px 26px rgba(17,18,20,.08);
 }
 .photo img{
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3/2;   /* wider, less aggressive crop */
+  width: auto%;
+  height: 80%;
   object-fit: cover;
   object-position: center; /* adjust if needed */
    object-position: center 35%;
