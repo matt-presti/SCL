@@ -577,3 +577,28 @@ code{
   border: 1px solid var(--line);
   background: rgba(242,239,232,.8);
 }
+
+/* ===== Mobile fixes for Guides two-photo layout ===== */
+@media (max-width: 900px){
+  .guide-card{
+    grid-template-columns: 1fr;  /* stack */
+  }
+
+  .guide-photos{
+    grid-template-rows: auto auto; /* avoid 1fr collapsing */
+  }
+
+  .guide-photos img{
+    height: 240px;     /* consistent size on mobile */
+    min-height: 240px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 480px){
+  .guide-photos img{
+    height: 210px;
+    min-height: 210px;
+  }
+}
